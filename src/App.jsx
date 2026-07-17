@@ -6,8 +6,6 @@ import IngresosEgresos from './pages/dashboard/IngresosEgresos';
 import Reportes from './pages/dashboard/Reportes';
 import Tesoreria from './pages/dashboard/Tesoreria';
 import Login from './pages/auth/Login';
-import Recuperar from './pages/auth/Recuperar';
-import Registro from './pages/auth/Registro';
 
 export default function App() {
   return (
@@ -15,8 +13,6 @@ export default function App() {
       <Routes>
         {/* Rutas Públicas (Auth) */}
         <Route path="/login" element={<Login />} />
-        <Route path="/recuperar" element={<Recuperar />} />
-        <Route path="/registro" element={<Registro />} />
 
         {/* Todas las rutas privadas ahora usan TailwindLayout */}
         <Route element={<TailwindLayout />}>
