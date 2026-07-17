@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Finanzas EsSalud</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../../assets/js/tailwind-config.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-essalud-light h-screen flex items-center justify-center font-sans">
+    <div class="bg-white p-8 rounded-xl shadow-lg max-w-md w-full border border-essalud-border">
+        <div class="text-center mb-8">
+            <h1 class="text-2xl font-bold text-essalud-blue">Registro de Usuario</h1>
+            <p class="text-gray-500 mt-2">Módulo de Finanzas</p>
+        </div>
+        <form>
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-essalud-text mb-1">DNI</label>
+                <input type="text" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-essalud-blue focus:ring-1 focus:ring-essalud-blue">
+            </div>
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-essalud-text mb-1">Nombres Completos</label>
+                <input type="text" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-essalud-blue focus:ring-1 focus:ring-essalud-blue">
+            </div>
+            <button type="button" class="w-full bg-essalud-blue text-white rounded-lg py-2 font-medium hover:bg-essalud-accent transition-colors mt-2">Solicitar Registro</button>
+        </form>
+        <div class="mt-4 text-center">
+            <a href="login.html" class="text-sm text-gray-500 hover:text-essalud-blue hover:underline">Ya tengo una cuenta</a>
+        </div>
+    </div>
+</body>
+</html>

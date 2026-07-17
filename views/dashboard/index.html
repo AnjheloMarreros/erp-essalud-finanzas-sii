@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Financiero | ERP EsSalud</title>
+    <link rel="stylesheet" href="../../assets/css/variables.css">
+    <link rel="stylesheet" href="../../assets/css/global.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <!-- Iconos Phosphor -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="finance-layout">
+        <!-- Sidebar Reutilizable (Simulado para esta vista) -->
+        <aside class="finance-sidebar">
+            <div class="brand">
+                <i class="ph ph-heartbeat brand-icon"></i>
+                <h2>Finanzas ERP</h2>
+            </div>
+            <nav class="finance-nav">
+                <a href="#" class="active"><i class="ph ph-squares-four"></i> Dashboard</a>
+                <a href="#"><i class="ph ph-wallet"></i> Tesorería y Pagos</a>
+                <a href="#"><i class="ph ph-chart-line-up"></i> Presupuesto</a>
+                <a href="#"><i class="ph ph-books"></i> Contabilidad</a>
+                <a href="#"><i class="ph ph-file-text"></i> Reportes</a>
+            </nav>
+        </aside>
+
+        <main class="finance-main-content">
+            <!-- Topbar Reutilizable -->
+            <header class="finance-topbar">
+                <div class="page-title">
+                    <h1>Resumen Financiero</h1>
+                    <p>Red Prestacional Rebagliati - Oficina de Finanzas</p>
+                </div>
+                <div class="user-profile">
+                    <div class="avatar">JC</div>
+                    <div class="user-info">
+                        <strong>Juan Carlos</strong>
+                        <span>Jefe de Finanzas</span>
+                    </div>
+                </div>
+            </header>
+
+            <section class="finance-page-content">
+                <!-- Tarjetas de KPIs -->
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span>Presupuesto Ejecutado</span>
+                            <div class="icon-box primary"><i class="ph ph-currency-circle-dollar"></i></div>
+                        </div>
+                        <h3>S/ 12,450,000</h3>
+                        <p class="positive"><i class="ph ph-trend-up"></i> +4.5% vs mes anterior</p>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span>Pagos Pendientes</span>
+                            <div class="icon-box warning"><i class="ph ph-clock-countdown"></i></div>
+                        </div>
+                        <h3>S/ 845,200</h3>
+                        <p class="neutral">32 requerimientos en cola</p>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span>Conciliación Bancaria</span>
+                            <div class="icon-box success"><i class="ph ph-check-circle"></i></div>
+                        </div>
+                        <h3>94%</h3>
+                        <p class="positive">Meta operativa superada (>90%)</p>
+                    </div>
+                </div>
+
+                <!-- Tabla de Últimos Movimientos -->
+                <div class="recent-transactions">
+                    <div class="section-header">
+                        <h2>Últimas Transacciones (Tesorería)</h2>
+                        <button class="btn-primary">Nuevo Registro</button>
+                    </div>
+                    <table class="finance-table">
+                        <thead>
+                            <tr>
+                                <th>ID Transacción</th>
+                                <th>Concepto</th>
+                                <th>Partida Pptal.</th>
+                                <th>Fecha</th>
+                                <th>Estado</th>
+                                <th>Monto</th>
+                            </tr>
+                        </thead>
+                        <tbody id="transaction-table-body">
+                            <!-- Los datos se inyectarán vía JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilidad - Finanzas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../../assets/js/tailwind-config.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-essalud-light font-sans text-essalud-text flex h-screen overflow-hidden">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white border-r border-essalud-border flex flex-col h-full shrink-0 shadow-sm z-10">
+        <div class="p-4 border-b border-essalud-border flex items-center justify-center h-[73px]">
+            <div class="flex items-center gap-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/EsSalud_logo.svg/2560px-EsSalud_logo.svg.png" alt="EsSalud" class="h-6">
+                <span class="text-xl font-bold text-[#003865] tracking-tight ml-1">ERP</span>
+            </div>
+        </div>
+        
+        <nav class="flex-1 overflow-y-auto p-3 space-y-1 mt-2">
+            <a href="#" class="sidebar-menu-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-600 hover:bg-gray-50 hover:text-essalud-blue transition-colors text-sm font-medium">
+                <i class="ph ph-squares-four text-lg"></i> Dashboard
+            </a>
+            <a href="tesoreria.html" class="sidebar-menu-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-600 hover:bg-gray-50 hover:text-essalud-blue transition-colors text-sm font-medium">
+                <i class="ph ph-bank text-lg"></i> Tesorería y Presup.
+            </a>
+            <a href="ingresos_egresos.html" class="sidebar-menu-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-600 hover:bg-gray-50 hover:text-essalud-blue transition-colors text-sm font-medium">
+                <i class="ph ph-arrows-left-right text-lg"></i> Ingresos / Egresos
+            </a>
+            <a href="contabilidad.html" class="sidebar-menu-item flex items-center gap-3 px-3 py-2.5 rounded-lg bg-essalud-blue text-white shadow-md shadow-blue-900/20 transition-all text-sm font-medium">
+                <i class="ph ph-calculator text-lg"></i> Contabilidad
+            </a>
+            <a href="reportes.html" class="sidebar-menu-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-600 hover:bg-gray-50 hover:text-essalud-blue transition-colors text-sm font-medium">
+                <i class="ph ph-file-text text-lg"></i> Reportes
+            </a>
+
+        </nav>
+        
+        <div class="p-3 border-t border-essalud-border space-y-1">
+            <a href="#" class="flex items-center gap-3 px-3 py-2.5 text-gray-600 hover:bg-gray-50 rounded-lg transition-colors text-sm font-medium">
+                <i class="ph ph-gear text-lg"></i> Configuración
+            </a>
+            <a href="../auth/login.html" class="flex items-center gap-3 px-3 py-2.5 text-red-600 hover:bg-red-50 rounded-lg transition-colors text-sm font-medium">
+                <i class="ph ph-sign-out text-lg"></i> Cerrar Sesión
+            </a>
+        </div>
+    </aside>
+    <!-- Main Content wrapper only for placeholder -->
+    <div class="flex-1 flex flex-col h-full overflow-hidden">
+        <!-- Topbar -->
+        <header class="bg-white border-b border-essalud-border h-16 flex items-center justify-end px-6 shrink-0 shadow-sm z-0">
+
+            <div class="flex items-center gap-5">
+                <div class="relative">
+                    <i class="ph ph-magnifying-glass absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    <input type="text" placeholder="Buscar transacción..." class="pl-9 pr-4 py-1.5 border border-gray-200 rounded-md text-sm focus:outline-none focus:border-essalud-blue focus:ring-1 focus:ring-essalud-blue w-64 bg-gray-50 placeholder-gray-400 transition-all">
+                </div>
+                <button class="text-gray-500 hover:text-essalud-blue relative p-1 rounded-full hover:bg-gray-100 transition-colors">
+                    <i class="ph ph-bell text-xl"></i>
+                    <span class="absolute top-1 right-1.5 w-2 h-2 bg-red-500 rounded-full border-2 border-white"></span>
+                </button>
+                <div class="flex items-center gap-3 border-l border-gray-200 pl-5">
+                    <div class="text-right hidden sm:block">
+                        <p class="text-sm font-semibold text-gray-800 leading-none">Admin Role</p>
+                        <p class="text-[10px] text-gray-500 uppercase tracking-wide mt-1">Oficina de Finanzas</p>
+                    </div>
+                    <img src="https://i.pravatar.cc/150?u=a042581f4e29026704d" alt="Profile" class="w-9 h-9 rounded-full border border-gray-200 object-cover">
+                </div>
+            </div>
+        </header>
+        <main class="flex-1 overflow-y-auto p-6">
+            <div class="flex justify-between items-center mb-6">
+                <div>
+                    <h1 class="text-2xl font-bold text-gray-900">Módulo de Contabilidad</h1>
+                    <p class="text-sm text-gray-500">Gestión de Extornos, Activos y Períodos</p>
+                </div>
+                <a href="tesoreria.html" class="text-essalud-blue hover:underline">Volver a Tesorería</a>
+            </div>
+            <div class="bg-white rounded-xl shadow-sm border border-essalud-border p-6 text-center text-gray-500 py-20">
+                <i class="ph ph-calculator text-4xl mb-3 text-gray-300"></i>
+                <p>En construcción (RF04, RF05, RF15, RF16)</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

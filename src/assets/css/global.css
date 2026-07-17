@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text-main);
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  width: 100%;
+}
+
+/* Layout del Módulo */
+.finance-layout {
+  display: flex;
+  width: 100%;
+}
+
+.finance-sidebar {
+  width: 260px;
+  background-color: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.finance-main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.finance-topbar {
+  height: 70px;
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.finance-page-content {
+  padding: 30px;
+  overflow-y: auto;
+}
